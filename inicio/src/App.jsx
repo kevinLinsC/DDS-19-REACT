@@ -1,15 +1,20 @@
 import "./App.css";
-import FirstComponent from "./components/FirstComponent";
-import Motivacao from "./components/Motivacao";
-import TemplateExpressions from "./components/TemplateExpressions";
+import MeuCss from "./components/MeuCss/MeuCss";
+import MyCss from "./components/MyCSS/MyCss";
 
 function App() {
   return (
     <>
-      <TemplateExpressions />
-      <hr />
-      <FirstComponent />
+      {/* <TemplateExpressions /> */}
+      {/* <hr /> */}
+      {/* <FirstComponent /> */}
       {/* <Motivacao/> */}
+      {/* <Events/> */}
+      <h2>999</h2>
+      {/* <Images></Images> */}
+      <MeuCss />
+      <MyCss />
+      <p>Purple rain</p>
     </>
   );
 }
