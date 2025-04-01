@@ -23,7 +23,7 @@ const Forms = () => {
     <div>
         <h4>Forms</h4>
         <div>
-            <form action="" className={styles.formulario} onSubmit={{handleSubmit}}>
+            <form action="" className={styles.formulario} onSubmit={handleSubmit}>
                 {/* Label fora do input, com htmlFor */}
                 <label htmlFor="nome">
                     <span>Nome:</span>
