@@ -8,6 +8,7 @@ import Contato from "./pages/Contato.jsx";
 import Home from "./pages/Home.jsx";
 import Sobre from "./pages/Sobre.jsx";
 import Login from "./pages/Login.jsx";
+import InfoCard from "./components/InfoCard";
 
 const router = createBrowserRouter([
     {
@@ -38,7 +39,11 @@ const router = createBrowserRouter([
             {
                 path:"Sobre",
                 element: <Sobre />,
-            }
+            },
+            {
+                path:"/informacao/:id",
+                element: <InfoCard />,
+            },
         ],
     },
 ]);

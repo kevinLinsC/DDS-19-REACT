@@ -4,7 +4,7 @@ const PaginaErro = () => {
   return (
     <div>
       <h1>PaginaErro</h1> <br />
-      <Link to="/home">Pagina inicial</Link>
+      <Link to="/">Pagina inicial</Link>
     </div>
   )
 }
