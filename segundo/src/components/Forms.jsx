@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 
 import styles from "./Forms.module.css"
 
-const Forms = () => {
-    const [nome, setNome] = useState();
-    const [email, setEmail] = useState();
-    const [senha, setSenha] = useState();
+const Forms = (props) => {
+    const [nome, setNome] = useState(props ? props.nome : "");
+    const [email, setEmail] = useState(props ? props.email : "");
+    const [senha, setSenha] = useState(props ? props.senha : "");
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -27,18 +27,36 @@ const Forms = () => {
                 {/* Label fora do input, com htmlFor */}
                 <label htmlFor="nome">
                     <span>Nome:</span>
-                    <input type="text" id="nome" placeholder='Nome' onChange={handleName}/>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        placeholder='Nome' 
+                        onChange={handleName}
+                        value={nome}
+                    />
                 </label>
                 
                 {/* Label envolvendo o input */}
                 <label htmlFor="email">
                     <span>Email:</span>
-                    <input type="email" name='email' placeholder='E-mail' onChange={(e) => {setEmail(e.target.value)}}/>
+                    <input 
+                        type="email" 
+                        name='email' 
+                        placeholder='E-mail' 
+                        onChange={(e) => {setEmail(e.target.value)}}
+                        value={email}
+                    />
                 </label>
 
                 <label htmlFor="senha">
                     <span>Senha:</span>
-                    <input type="text" name="senha" placeholder='Senha' onChange={(e) => {setSenha(e.target.value)}}/>
+                    <input 
+                        type="text" 
+                        name="senha" 
+                        placeholder='Senha' 
+                        onChange={(e) => {setSenha(e.target.value)}}
+                        value={senha}
+                    />
                 </label>
 
                 <input type="submit" value="Enviar" className={styles.btn} />

@@ -1,11 +1,13 @@
 import React from 'react'
 import Forms from "../components/Forms"
+import NewForms from "../components/NewForms"
 
 const Cadastro = () => {
   return (
     <div>
-      <h1>Cadastro</h1>
-      <Forms />
+      {/* <Forms /> */}
+      {/* <Forms nome="Jarad Anthony Higgins" email="juiceWRLD@gmail.com" senha="JuiCeWrLD@" /> */}
+      <NewForms />
     </div>
   )
 }
