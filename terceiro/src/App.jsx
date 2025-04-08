@@ -2,6 +2,9 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar";
 
+// Importanto do React-Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return(
