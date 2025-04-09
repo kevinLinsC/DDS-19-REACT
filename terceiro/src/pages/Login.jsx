@@ -1,8 +1,30 @@
 import Alert from "react-bootstrap/Alert"
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+
+
 const Login = () => {
   return (
-    <div>
-      <h1>Login</h1>
+    <div className="mt-3 w-50 mx-auto">
+      <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email:</Form.Label>
+        <Form.Control type="email" placeholder="Digite seu email" />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Senha:</Form.Label>
+        <Form.Control type="password" placeholder="Senha" />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Lembrar neste computador" />
+      </Form.Group>
+
+      <Button variant="primary" className="justify-content-center" type="submit">
+        Entrar
+      </Button>
+    </Form>
       <Alert variant="danger">Hackearam</Alert>
     </div>
   )

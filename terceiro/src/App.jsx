@@ -5,13 +5,19 @@ import NavBar from "./components/NavBar";
 // Importanto do React-Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Container from "react-bootstrap/Container"
+
+import NewNavBar from "./components/NewNavBar";
+
 
 function App() {
   return(
     <>
-      <NavBar />
-      <Outlet />
-    
+      <NewNavBar />
+      <Container>
+        
+        <Outlet />
+      </Container>
     </>
   )
 }
