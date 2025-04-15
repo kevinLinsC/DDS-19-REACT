@@ -1,0 +1,76 @@
+{
+  "alunos": [
+    {
+      "id": "1",
+      "nome": "Jarad Anthony Higgins",
+      "idade": "21"
+    },
+    {
+      "id": "2",
+      "nome": "Juice WRLD",
+      "idade": "21"
+    },
+    {
+      "id": "3",
+      "nome": "Jarad 'Juice WRLD' Higgins",
+      "idade": "21"
+    }
+  ],
+  "professores": [
+    {
+      "id": "1",
+      "nome": "Arthur Morgan",
+      "idade": "36"
+    },
+    {
+      "id": "2",
+      "nome": "John Morston",
+      "idade": "38"
+    },
+    {
+      "id": "3",
+      "nome": "Sadie Adler",
+      "idade": "30"
+    }
+  ],
+  "disciplinas": [
+    {
+      "id": "1",
+      "nome": "Geralt of Rivia",
+      "idade": "57"
+    },
+    {
+      "id": "2",
+      "nome": "Triss Merigold",
+      "idade": "54"
+    },
+    {
+      "id": "3",
+      "nome": "Yennefer of Vengerberg",
+      "idade": "94"
+    }
+  ],
+  "funcionarios": [
+    {
+        "id": "1",
+        "nome": "Jarad Anthony Higgins",
+        "idade": "21",
+        "senha": "senha123",
+        "tipo": "Administrador"
+      },
+      {
+        "id": "2",
+        "nome": "Juice WRLD",
+        "idade": "21",
+        "senha": "senha123",
+        "tipo": "Administrador"
+      },
+      {
+        "id": "3",
+        "nome": "Jarad 'Juice WRLD' Higgins",
+        "idade": "21",
+        "senha": "senha123",
+        "tipo": "Administrador"
+      }
+  ]
+}

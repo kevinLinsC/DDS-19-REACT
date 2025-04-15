@@ -6,6 +6,7 @@ import Cadastro from "../components/Cadastro";
 import Tabela from "../components/Tabela";
 import Excluir from "../components/Excluir";
 
+
 const Home = () => {
   return (
       <div className="d-flex flex-wrap" >
