@@ -1,7 +1,11 @@
 // Importação dos componentes do Bootstrap
 import Table from "react-bootstrap/Table";
 
+import { getFuncionarios } from "../hooks/useApi.js";
+
 const Tabela = () => {
+  const funcinarios = getFuncionarios();
+  console.log("Funcionários recebidos: ", funcinarios);
   return (
     <div  style={{ width: "90%", margin: "auto" }}>
       <h1>Tabela</h1>
@@ -15,12 +19,14 @@ const Tabela = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
+          {funcinarios.map( (funcionario) => (
+            <tr key={funcionario.id}>
+              <td>{funcionario.id}</td>
+              <td>{funcionario.nome}</td>
+              <td>{funcionario.email}</td>
+              <td>{funcionario.tipo}</td>
+            </tr>
+          ))}
         </tbody>
       </Table>
     </div>
