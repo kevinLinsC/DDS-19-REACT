@@ -24,6 +24,8 @@ const Cadastro = () => {
   const onSubmit = (data) => {
     console.log("Dados:", data);
     addFuncionario(data);
+    alert("Funcionário cadastrado com sucesso.");
+    window.location.reload();
   };
 
   // Função chamada quando há erros no envio do formulário

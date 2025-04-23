@@ -52,25 +52,27 @@
   ],
   "funcionarios": [
     {
-        "id": "1",
-        "nome": "Jarad Anthony Higgins",
-        "idade": "21",
-        "senha": "senha123",
-        "tipo": "Administrador"
-      },
-      {
-        "id": "2",
-        "nome": "Juice WRLD",
-        "idade": "21",
-        "senha": "senha123",
-        "tipo": "Administrador"
-      },
-      {
-        "id": "3",
-        "nome": "Jarad 'Juice WRLD' Higgins",
-        "idade": "21",
-        "senha": "senha123",
-        "tipo": "Administrador"
-      }
+      "Id": "1",
+      "nome": "brinquedos",
+      "email": "kevin.l.andrade@aluno.senai.br",
+      "senha": "dsadsadsadsadsa",
+      "tipo": "Administrador",
+      "id": "1"
+    },
+    {
+      "Id": "2",
+      "nome": "Jarad Juice WRLD",
+      "email": "jaradJuiceWrld@dadasdas.com",
+      "senha": "jarad12345",
+      "tipo": "Gerente",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "nome": "Jarad 'Juice WRLD' Higgins",
+      "idade": "21",
+      "senha": "senha123",
+      "tipo": "Administrador"
+    }
   ]
 }

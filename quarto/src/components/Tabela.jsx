@@ -1,14 +1,21 @@
 // Importação dos componentes do Bootstrap
 import Table from "react-bootstrap/Table";
+import Button from "react-bootstrap/Button";
 
 import { getFuncionarios } from "../hooks/useApi.js";
 
 const Tabela = () => {
   const funcinarios = getFuncionarios();
   console.log("Funcionários recebidos: ", funcinarios);
+  
   return (
     <div  style={{ width: "90%", margin: "auto" }}>
       <h1>Tabela</h1>
+
+      <Button variant="primary" onClick={() => {window.location.reload();}}>
+        Recarregar
+      </Button>
+
       <Table striped bordered hover>
         <thead>
           <tr>

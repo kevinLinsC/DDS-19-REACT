@@ -32,7 +32,7 @@ export function getFuncionarios(){
     return funcionarios;
 }
 
-export function addFuncionario(){
+export function addFuncionario(funcionario){
     async function fetchData() {
         try{
             const response = await fetch(url, {
@@ -48,4 +48,42 @@ export function addFuncionario(){
             console.log("Erro ao cadastrar funcionário: ", error);
         }
     }
+    fetchData();
+}
+
+export function deletarFuncionario(id){
+    async function fetchData() {
+        try{
+            const response = await fetch(`${url}/${id}`,{
+                method: "DELETE"
+            });
+            const data = await response.json();
+            console.log("Usuário excluído com sucesso.");
+        }
+        catch(error){
+            console.log("Erro ao delete funcionário: ", error)
+        }
+    }
+    fetchData();
+}
+
+export function editarFuncionario(funcionario){
+    async function fetchData() {
+        try{
+            const response = await fetch(`${url}/${funcionario.Id}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(funcionario)
+            });
+
+            const data = await response.json();
+            console.log("Usuário editado com sucesso:", data);
+        }
+        catch(error){
+            console.log("Erro ao editar funcionário: ", error);
+        }
+    }
+    fetchData();
 }
